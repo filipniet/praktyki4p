@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" lang="JavaScript"></script>
+</head>
+<body>
+    <h1>Kalkulator</h1>
+    <form id="calc">
+        Liczba 1:<input type="number" id="n2" required><br>
+
+        Operacja:
+        <select id="op">
+            <option value="add">Dodawanie</option>
+            <option value="sub">Odejmowanie</option>
+            <option value="multi">Mnożenie</option>
+            <option value="div">Dzielenie</option>
+        </select><br>
+
+        Liczba 2:<input type="number" id="n2" required><br>
+
+        <input type="button" value="Oblicz" onclick="calculate()">
+    </form>
+
+    <p id="wynik"></p>
+</body>
+</html>
