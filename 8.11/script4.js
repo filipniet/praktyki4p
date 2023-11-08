@@ -1,12 +1,13 @@
-const oblicz =()=>{
+
     var tab1 = [10, 11, "Hania", 11];
-    var wynik = tab1.filter(filtr);
+    var wynik = [];
     console.log(wynik);
-    }
     
-    const filtr =(numer)=>{
-    if(numer === 11){
-        return numer;
-    }
-    }
-    oblicz();
+    for (var i = 0; i < 4; i++) {
+        if(tab1[i] === 11){
+            wynik.push(11);
+        }
+      }
+    
+    
+    
