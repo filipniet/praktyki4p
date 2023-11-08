@@ -1,27 +1,27 @@
-function calculate() {
-    const n1 = parseFloat(document.getElementById("n1").value);
-    const n2 = parseFloat(document.getElementById("n2").value);
-    const op = document.getElementById("op").value;
-    let wynik;
-
-    switch (op) {
-        case "add":
-            wynik = n1 + n2;
-            break;
-        case "sub":
-            wynik = n1 - n2;
-            break;
-        case "multi":
-            wynik = n1 * n2;
-            break;
-        case "div":
-            if (n2 === 0) {
-                alert("Nie można dzielić przez zero.");
-                return;
-            }
-            wynik = n1 / n2;
-            break;
+function calculate(operator, liczba1, liczba2) {
+    switch (operator) {
+      case '+':
+        return liczba1 + liczba2;
+      case '-':
+        return liczba1 - liczba2;
+      case '*':
+        return liczba1 * liczba2;
+      case '/':
+        if (liczba2 !== 0) {
+          return liczba1 / liczba2;
+        } else {
+          return "nie da sie przez 0 ";
+        }
+      default:
+        return "wybierz cos innego";
     }
-
-    document.getElementById("wynik").innerHTML = `Wynik: ${wynik}`;
-}
+  }
+  
+  function calculateResult() {
+    const liczba1 = parseFloat(document.getElementById("liczba1").value);
+    const liczba2 = parseFloat(document.getElementById("liczba2").value);
+    const operator = document.getElementById("operator").value;
+    const result = calculate(operator, liczba1, liczba2);
+    document.getElementById("result").textContent = result;
+  }
+  
