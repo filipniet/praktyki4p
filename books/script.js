@@ -23,7 +23,7 @@ function isOdd(number) {return number % 2 !== 0;}
 function hasNumber(title) {return /\d/.test(title);}
 const filteredBooks2 = books.filter(book => book.rating > 5 && isOdd(book.pages) && hasNumber(book.title));
 const booksCount = filteredBooks2.length;
-console.log(`Ilość książek: ${positiveRatingCount}`);
+console.log(`Ilość książek: ${booksCount}`);
 
 const sortedBooks = books.sort((a, b) => b.title.length - a.title.length);
 const secondLongest = sortedBooks[1].title;
