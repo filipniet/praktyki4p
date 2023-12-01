@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Film</title>
+    <link rel="stylesheet" href="styles/addFilm.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"/>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/apiService.js"></script>
+  <script src="scripts/validationUtils.js"></script>
+</head>
+<body>
+    <div class="title">
+        <img id="logo" src="images/logo.png">
+        <h1 id="name" onclick="gotoMain()">CINEMA CRITICS</h1>
+        <button onclick="gotoMain()" id="btn">BACK</button>
+    </div>
+
+    <div class="blok">
+        <form action="form.php" method="post">
+            <h1>Add Film</h1>
+            <input type="text" name="title" id="title" placeholder="Title" required/><br>
+            <input type="text" name="description" id="description" placeholder="Description" required/><br>
+            <input type="text" name="genre" id="genre" placeholder="Genre" required/><br>
+            <input type="submit" value="Add"><br>
+        </form>
+    </div>
+</body>
+</html>

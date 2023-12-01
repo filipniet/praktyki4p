@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png"/>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/apiService.js"></script>
+  <script src="scripts/validationUtils.js"></script>
+  <title>Cinema Critics</title>
+</head>
+<body>
+  <div class="title">
+    <img id="logo" src="images/logo.png">
+    <button onclick="fetchPopularMovies()" id="button">Popular</button>
+  <button onclick="fetchTopMovies()" id="button">Top Movies</button>
+  <h1 id="name" onclick="fetchPopularMovies()">CINEMA CRITICS</h1>
+  <button onclick="fetchTrendingMovies()" id="button">Trending</button>
+  <button onclick="addMovie()" id="button">Add Movie</button>
+    <button onclick="yourMovies()" id="btn">Your Movies</button>
+    
+    
+  </div>
+  
+ 
+  
+  <div id="search">
+    <label for="searchInput">Search Movies:</label>
+    <input type="text" id="searchInput">
+    <button onclick="searchMovies()" id="button">Search</button>
+  </div>
+  <div id="sort">
+    <label for="sortOptions">Sort Movies By:</label>
+    <select id="sortOptions" onchange="sortMovies()">
+      <option value="az">Sort A-Z</option>
+      <option value="za">Sort Z-A</option>
+      <option value="oldest">Sort by Oldest Release Date</option>
+      <option value="newest">Sort by Newest Release Date</option>
+    </select>
+  </div>
+
+  <div id="app">
+    <div id="movieList"></div>
+  </div>
+</body>
+</html>

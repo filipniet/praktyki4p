@@ -1,0 +1,112 @@
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    background-color: #301934;
+    color: white;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.title {
+    background-color: rgb(15, 13, 13);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name {
+    color: yellow;
+    font-size: 40px;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#logo {
+    height: 90px;
+    width: 90px;
+    margin-right: 10px;
+}
+
+#btn {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.container {
+    
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.blok {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 40px;
+    background: #191919;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    border: 3px solid yellow;
+}
+
+.blok input[type="text"],
+.blok input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid yellow;
+    padding: 14px 10px;
+    width: calc(100% - 40px);
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.blok input[type="text"]:focus,
+.blok input[type="submit"]:hover {
+    background-color: #9AC022;
+}
+
+.blok h1 {
+    color: white;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    .blok {
+        padding: 20px;
+    }
+
+    .blok input[type="text"],
+    .blok input[type="submit"] {
+        padding: 12px 8px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        height: 100vh;
+    }
+
+    .blok {
+        width: 60%;
+    }
+}
